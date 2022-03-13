@@ -76,6 +76,41 @@ int main()
   ...
 }
 ```
+## Execution Result
+The execution result is as follow
+```
+======== TEST SUITE : showsomewords ========
+Param 1: ABCABC
+
+< TEST CASE : showAnyString >
+Hello Hello ~
+>> Elepsed Time: 256 [us]
+
+< TEST CASE : throwexcepttest >
+Exception : thrown for showing
+>> Elepsed Time: 1053 [us]
+
+< TEST CASE : showAnyStringAppend >
+Hello Hello ~ABCABC
+>> Elepsed Time: 270 [us]
+
+< TEST CASE : showAnyStringPreppend >
+ABCABCHello Hello ~
+>> Elepsed Time: 215 [us]
+
+======== TEST SUITE : binaryOperations ========
+Param 1: 3
+Param 2: 4
+
+< TEST CASE : amulb >
+12
+>> Elepsed Time: 152 [us]
+
+< TEST CASE : aplusb >
+7
+>> Elepsed Time: 149 [us]
+```
+
 # Known Error
 1. **REGISTERTESTSUITE** cannot be used with std::cout-non-compatible types.
 Using std::cout-non-compatible types such as std::wstring, codes do not build.
@@ -89,3 +124,5 @@ Below code does build and there is no runtime error, but the parameter show is w
 ...
 REGISTERTESTSUITE(showsomewords, L"ABCABC") // no compile error, no runtime error but parameter list show seems wierd.
 ```
+
+
