@@ -2,7 +2,7 @@
 The world's simplest test tools.
 
 # Install
-Download ["testmacros.h"](https://github.com/QUOPA/TestTools/blob/main/src/testcommon/testmacros.h) file and include at which you use it.
+Download and include ["testmacros.h"](https://github.com/QUOPA/TestTools/blob/main/src/testcommon/testmacros.h) file.
 
 # Terms & Rules
 * Test Case
