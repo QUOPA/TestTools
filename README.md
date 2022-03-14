@@ -9,7 +9,7 @@ Download ["testmacros.h"](https://github.com/QUOPA/TestTools/blob/main/src/testc
   * A Test Case is a minimal test unit, and written in a function with/without parameter(s)
   * A Test Case MUST be enveloped by namespace representing Test Suite
 * Test Suite
-  * A Test Suite is a collection of Test Suites, and represented by namespace. 
+  * A Test Suite is a collection of Test Cases, and represented by namespace. 
   * The namespace specifying Test Suite MUST have function named 'TestSuite' with/without parameter(s)
   * The function 'TestSuite' register Test Cases by **REGISTERTESTCASE**(TestCaseFnName, Parameters...) macro.
 
