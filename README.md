@@ -1,5 +1,5 @@
-# TestTools
-The world's simplest test tools.
+# Common Environment
+Includes common directory configurations and test tools
 
 # Install
 Download and include ["testmacros.h"](https://github.com/QUOPA/TestTools/blob/main/src/testcommon/testmacros.h) file.
