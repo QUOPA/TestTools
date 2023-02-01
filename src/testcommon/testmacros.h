@@ -20,6 +20,9 @@ std::cout << std::endl <<  "======== TEST SUITE : " << #NS << " ========" << std
 __PARAMETEREXPANDER(##__VA_ARGS__);\
 NS::TestSuite(##__VA_ARGS__);
 
+#define REGISTERTESTSUITE_NOARG(NS)\
+std::cout << std::endl <<  "======== TEST SUITE : " << #NS << " ========" << std::endl; \
+NS::TestSuite();
 
 template<typename Head, typename... Args>
 void __PARAMETEREXPANDER_IMPL(std::size_t N, const Head& head, const Args&... args);
